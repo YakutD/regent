@@ -1,0 +1,47 @@
+{
+    "name": "multihanded/regent",
+    "description": "The package for Laravel allows you to write regular expressions declaratively.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Daniil Egorov",
+            "email": "multihanded@outlook.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.4",
+        "laravel/framework": "^8.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "6.27.1",
+        "pestphp/pest": "1.23.0",
+        "pestphp/pest-plugin-laravel": "1.4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "MultihandED\\Regent\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": { 
+            "MultihandED\\Regent\\Tests\\": "tests"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "MultihandED\\Regent\\Providers\\RegentServiceProvider"
+            ],
+            "aliases": {
+                "Regent": "MultihandED\\Regent\\Facades\\Regent",
+                "RegentException": "MultihandED\\Regent\\Exceptions\\RegentException"
+            }
+        }
+    }
+}
