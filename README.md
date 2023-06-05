@@ -97,7 +97,7 @@ It is not recommended to set these properties directly, however you are free to 
 
 ### Public methods
 
-- static **init** (string *$delimiter* = null): self - creates and returns an instance of the regular expression builder. Takes a delimiter as an argument. If no delimiter is provided, the default delimiter will be set.
+- static **init** (string *$delimiter* = null): static - creates and returns an instance of the regular expression builder. Takes a delimiter as an argument. If no delimiter is provided, the default delimiter will be set.
 
 - **clear**(bool *$withDelimiter* = false): self - sets the **pattern** and **flags** properties to empty strings. If the *$withDelimiter* argument is *true* then the delimiter will be set to its default value. Returns a reference to the call object.
 

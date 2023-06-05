@@ -67,9 +67,9 @@ class Builder
      * @param string|null $delimiter (Optional) - Delimiter value for the newly created object
      * @return self
      */
-    public static function init(string $delimiter = null): self
+    public static function init(string $delimiter = null): static
     {
-        return new self($delimiter);
+        return new static($delimiter);
     }
 
     /**

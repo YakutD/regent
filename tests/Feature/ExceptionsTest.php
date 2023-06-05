@@ -20,7 +20,7 @@ test('invalidFlag', function ()
         $actualException = $e;
     }
 
-    $this->assertInstanceOf(get_class($etalonException), $actualException);
+    $this->assertInstanceOf($etalonException::class, $actualException);
     $this->assertSame($etalonException->getMessage(), $actualException->getMessage());
 });
 
@@ -42,7 +42,7 @@ test('notPassedFlags', function ()
             $iterateException = $e;
         }
 
-        $this->assertInstanceOf(get_class($etalonException), $iterateException);
+        $this->assertInstanceOf($etalonException::class, $iterateException);
         $this->assertSame($etalonException->getMessage(), $iterateException->getMessage());
     }
 });
@@ -67,7 +67,7 @@ test('invalidModifier', function ()
             $iterateException = $e;
         }
 
-        $this->assertInstanceOf(get_class($etalonException), $iterateException);
+        $this->assertInstanceOf($etalonException::class, $iterateException);
         $this->assertSame($etalonException->getMessage(), $iterateException->getMessage());
 
         $wrongArgs = array_reverse($wrongArgs);
@@ -90,7 +90,7 @@ test('notPassedModifiers', function ()
         $actualException = $e;
     }
 
-    $this->assertInstanceOf(get_class($etalonException), $actualException);
+    $this->assertInstanceOf($etalonException::class, $actualException);
     $this->assertSame($etalonException->getMessage(), $actualException->getMessage());
 });
 
@@ -113,7 +113,7 @@ test('invalidDelimiter', function ()
             $iterateException = $e;
         }
 
-        $this->assertInstanceOf(get_class($etalonException), $iterateException);
+        $this->assertInstanceOf($etalonException::class, $iterateException);
         $this->assertSame($etalonException->getMessage(), $iterateException->getMessage());
     }
 });

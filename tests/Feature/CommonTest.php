@@ -5,7 +5,7 @@ use MultihandED\Regent\Facades\Regent;
 test('init', function()
 {
     $regent = Regent::init();
-    $this->assertInstanceOf(get_class(Regent::getFacadeRoot()), $regent);
+    $this->assertInstanceOf(Regent::getFacadeRoot()::class, $regent);
 });
 
 test('__toString', function()
