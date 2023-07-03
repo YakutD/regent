@@ -130,7 +130,7 @@ List of valid flags: **i**, **m**, **s**, **x**, **A**, **D**, **S**, **U**, **X
 adds the values specified in the *$flags* argument to the **flags** property. Throws an exception when passing an empty array in *$flags*. Otherwise, it works similar to the **flag** method. Returns a reference to the call object.
 
 - **massFlagsAssoc**(array *$flags*): self - 
-adds the values specified in the *$flags* argument to the **flags** property. Throws an exception when passing an empty array in *$flags*. The *$flags* argument must be an associative array, where the key is the flag to add and the value is *$add* as in the **flag** and *massFlags* methods. For example, an array like ["i" => true, "m" => false] would add the **i** flag and remove the **m** flag. Returns a reference to the call object.
+adds the values specified in the *$flags* argument to the **flags** property. Throws an exception when passing an empty array in *$flags*. The *$flags* argument must be an associative array, where the key is the flag to add and the value is *$add* as in the **flag** and **massFlags** methods. For example, an array like ["i" => true, "m" => false] would add the **i** flag and remove the **m** flag. Returns a reference to the call object.
 
 - **inlineFlags**(string *$inlineFlags*, bool $add = true): self - adds the flags specified in the *$inlineFlags* argument to the **flags** property. *$inlineFlags* is a string of consecutive flags, such as 'ims'. Otherwise, it works similar to the **flag** method. Returns a reference to the call object.
 
